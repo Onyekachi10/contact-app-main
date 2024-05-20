@@ -43,11 +43,22 @@
     }
 
 
-    label.value {
+    h3.value, h3.value2 {
          display: grid;
          justify-content: center;
          place-items: center;
          margin-top: 1pc;
+         width: 90%;
       }
+
+      h3.value2 {
+        background-image: url("./assets/images/icon-success-check.svg");
+        background-repeat: no-repeat; 
+        background-position: left; 
+        position: relative;
+        left: 0pc;
+        bottom:0pc;
+    }
+    
       
 }
