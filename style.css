@@ -1,143 +1,64 @@
-/* GENERAL */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Karla";
-}
+/* LAPTOP SCREEN */
 
-section {
-    position: absolute;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%,-50%);
-    background-color: hsl(0, 0%, 100%);  
-    border-radius: 10px;
-    width: 60%;
-} 
-
-body {
-    background-color: hsl(148, 38%, 91%);
-}
-
-
-
-/* CONTENT */
-
-form,h1  {
-    margin:40px;
-
-}
-
-h1{
-    font-size: 40px;
-    color: hsl(187, 24%, 22%);
-}
-
-h2 {
-    font-size: 16px;
-margin-bottom: 0.5pc;
-
-}
-
-
-input {
-    padding: 10px 10px;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
-input#fir {
-    width: 50%;
-}
-
-input#last,h2.last,span.two {
-    width: 40%;
-    position: relative;
-    bottom: 4.3pc;
-    left: 25pc;
-}
-
-
-/* EMAIL */
-input#email,h2.email {
-    width: 92%;
-    position: relative;
-    bottom: 2pc;
-}
-
-
-/* QUERY */
-h2.query {
-    margin-bottom: 1pc;
-}
-
-label.value {
-background-image: url("./assets/images/icon-radio-selected.svg");
- background-repeat: no-repeat; 
- background-position: left;
-border: 1px solid black;
-  padding: 10px 50px;
-  border-radius: 4px;
-  background-color: hsl(148, 38%, 91%);
-  color: hsl(187, 24%, 22%);
-  cursor: pointer;
-}
-
-
-label.value2 {
-    background-image: url("./assets/images/icon-success-check.svg");
-    background-repeat: no-repeat; 
-    background-position: left; 
-    border: 1px solid black;
-  padding: 10px 50px;
-  border-radius: 4px;
-  background-color: hsl(148, 38%, 91%);
-  color: hsl(187, 24%, 22%);
-  cursor: pointer;
-}
-
-
-/* MESSAGE */
-
-h2.mess {
-    margin-top: 2pc;
-}
-
-textarea {
-    width: 95%;
-    height: 100px;
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-
-/* AGREEMENT */
-input#box {
-    position: relative;
-    top: 1.5pc;
+@media screen and (max-width:1024px) and (min-width:768px) {
+    input#last,h2.last,span.two {
+        left: 18pc;
+    }
    
 }
 
-h3 {
-   margin-left: 1pc;
+@media screen and (max-width:768px) and (min-width:500px) {
+    input#last,h2.last,span.two {
+        left: 15pc;
+    } 
 }
 
-/* SUBMIT */
+@media screen  and (max-width:500px)  and (min-width:300px) {
+    input#last,h2.last,span.two {
+        bottom: 0pc;
+        left: 0pc; 
+    }
+    h2.last {
+        margin-top: 1pc;
+    }
+    input#fir,input#last {
+        width: 90%;
+    }
 
-input#submit {
-    width: 95%;
-    border: none;
-    color: white;
-    background-color: hsl(169, 82%, 27%);
-    cursor: pointer;
-    margin-top: 2pc;
-    padding: 20px 20px;
-    font-size: 20px;
-}
+    input#last {
+        margin-bottom: 4pc;
+    }
+
+    span.two {
+        position: relative;
+      bottom: 4pc;
+    }
+
+    span.email-err{
+        position: relative;
+        bottom: 2pc;
+    }
+    h2 {
+      margin-bottom: 1pc;
+    }
 
 
-/* ERROR-MESSAGES */
-span {
-    color: red;
+    h3.value, h3.value2 {
+         display: grid;
+         justify-content: center;
+         place-items: center;
+         margin-top: 1pc;
+         width: 90%;
+      }
+
+      h3.value2 {
+        background-image: url("./assets/images/icon-success-check.svg");
+        background-repeat: no-repeat; 
+        background-position: left; 
+        position: relative;
+        left: 0pc;
+        bottom:0pc;
+    }
+    
+      
 }
