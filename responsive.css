@@ -1,0 +1,53 @@
+/* LAPTOP SCREEN */
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    input#last,h2.last,span.two {
+        left: 18pc;
+    }
+   
+}
+
+@media screen and (max-width:768px) and (min-width:500px) {
+    input#last,h2.last,span.two {
+        left: 15pc;
+    } 
+}
+
+@media screen  and (max-width:500px)  and (min-width:300px) {
+    input#last,h2.last,span.two {
+        bottom: 0pc;
+        left: 0pc; 
+    }
+    h2.last {
+        margin-top: 1pc;
+    }
+    input#fir,input#last {
+        width: 90%;
+    }
+
+    input#last {
+        margin-bottom: 4pc;
+    }
+
+    span.two {
+        position: relative;
+      bottom: 4pc;
+    }
+
+    span.email-err{
+        position: relative;
+        bottom: 2pc;
+    }
+    h2 {
+      margin-bottom: 1pc;
+    }
+
+
+    label.value {
+         display: grid;
+         justify-content: center;
+         place-items: center;
+         margin-top: 1pc;
+      }
+      
+}
